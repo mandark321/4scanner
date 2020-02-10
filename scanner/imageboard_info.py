@@ -25,6 +25,11 @@ class imageboard_info:
             self.base_url = "https://uboachan.net/"
             self.image_base_url = "https://uboachan.net/"
             self.thread_subfolder = "/res/"
-            self.image_subfolder = "/src/"
+            self.image_subfolder = "/src/"            
+        elif imageboard == "8kun":
+            self.base_url = "https://8kun.top/"
+            self.image_base_url = "https://media.8kun.top/"
+            self.thread_subfolder = "/res/"
+            self.image_subfolder = "/file_store/"
         else:
             raise ValueError("Imageboard {0} is not supported.".format(imageboard))
